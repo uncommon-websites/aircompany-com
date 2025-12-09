@@ -38,6 +38,12 @@
 	--color-secondary-900: oklch(30% 0.1 30);
 	--color-secondary-950: oklch(20% 0.11 30);
 
-	--font-body: var(--font-family), var(--font-fallback);
+	--font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	--font-display: var(--font-body);
+}
+
+@layer base {
+  body {
+    @apply font-body antialiased text-gray-900;
+  }
 }
